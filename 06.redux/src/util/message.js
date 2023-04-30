@@ -28,7 +28,7 @@ const NOTI_VALIDATION = '';
 const NOTI_ERROR = '';
 
 /*
-* 메인
+* 통계
 */
 
 const STATISTICS_VALIDATION = '';
