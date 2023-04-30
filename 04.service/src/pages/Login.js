@@ -1,5 +1,6 @@
 import React,{ useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import loginService from '../../src/service/login/login.service';
 
 const Login = () => {
 
@@ -15,7 +16,26 @@ const Login = () => {
 
     useEffect( () => {
         idRef.current.focus();
+        login1();
     },[]);
+
+    const login1 = () => {
+        console.log('login service test proceeding...');
+        // let param = {
+        //     id: enteredId,
+        //     pw: enteredPw
+        // }
+    
+        // loginService.login1(
+        //   'login1',
+        //   param,
+        //   res => {
+        //     setData(res.data)
+        //   },
+        //   err => console.log(err)
+        // )
+      }
+
 
 
     useEffect( () => {
