@@ -27,32 +27,27 @@ export const router = createBrowserRouter(
                 },
                 {
                     path: '/main',
-                    loader: () => (!getLocalStorage() ? redirect('/error') : null),
                     element: <Main />
                 },
                 {
                     path: '/counter',
-                    loader: () => (!getLocalStorage() ? redirect('/error') : null),
                     element: <Counter />
                 },
                 {
                     path: '/main',
-                    loader: () => (!getLocalStorage() ? redirect('/error') : null),
                     element: <Main />
                 },
                 {
                     path: '/grid',
-                    loader: () => (!getLocalStorage() ? redirect('/error') : null),
                     element: <GridTest />
                 },
                 {
                     path: '/faq',
-                    loader: () => (!getLocalStorage() ? redirect('/error') : null),
                     element: <Faq />
                 },
                 {
                     path: '/auth',
-                    loader: () => (!getLocalStorage() ? redirect('/error') : null),
+                    // loader: () => (!getLocalStorage() ? redirect('/error') : null),
                     element: <Auth />
                 },
                 {
